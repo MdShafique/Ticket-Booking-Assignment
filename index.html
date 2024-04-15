@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Booking Assignment</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="font-Raleway mt-6">
+    <header id="header-section" class="lg:w-[1170px] m-auto ">
+        <div class="navbar bg-base-100 px-0">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                </div>
+                <a class="lg:text-4xl text-2xl font-extrabold">G-Ticket</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a class="text-xl">Home</a></li>
+                    <li><a class="text-xl">About</a></li>
+                    <li><a class="text-xl">Destination</a></li>
+                    <li><a class="text-xl">Search</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="btn text-green-500 bg-green-100 text-xl font-bold">Bus <img src="images/bus-icon.png"
+                        alt=""></a>
+            </div>
+        </div>
+
+        <div class="hero  lg:h-[550px] lg:mt-12 rounded-2xl bg-no-repeat " style="background-image:url('banner.png'); ">
+            <div class=""></div>
+            <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-2xl lg:space-y-7 space-y-2">
+                    <h1 class=" lg:text-6xl text-3xl font-bold">End-To-End Travel with</h1>
+                    <h2 class="lg:text-6xl text-3xl font-extrabold text-green-500"> G Paribahan</h2>
+                    <p class="mb-5 lg:text-[18px] lg:font-medium text-[#fff] text-center">welcome to greenline
+                        paribahan. it provide world class service around the country . it's your time for traveling by
+                        greenline paribahan . you can visit our website and book for your next trip.
+                    </p>
+                    <button onclick="scrolledmainsection()"
+                        class="btn lg:text-[20px] font-bold text-black bg-green-700 lg:px-4 sm:px-4  ">Buy
+                        ticket</button>
+                </div>
+            </div>
+        </div>
+
+        <section class=" lg:w-[1170px] lg:mt-[150px] mt-12">
+            <h2 class="lg:text-6xl text-2xl font-bold text-center">Best offers for you</h2>
+            <div class="lg:flex  lg:gap-x-5  ">
+                <div class="rounded-3xl lg:h-[220px] lg:w-[573px] bg-[#FFBF0F] flex lg:mt-12 mt-4">
+                    <div
+                        class=" lg:h-[250px] lg:w-[350px]  border-r-4 border-white border-dotted text-left p-8   flex flex-col justify-center items-start">
+                        <h2 class=" text-4xl font-bold">15% OFF</h2>
+                        <p class="text-2xl font-medium">on your next purchase</p>
+                        <p class=" text-2xl font-medium">Use by january 2024.</p>
+                    </div>
+                    <div class=" flex flex-col justify-center items-start gap-y-2 p-8">
+                        <h2 class="text-4xl font-bold ">NEW<span class="font-raleway">15</span></h2>
+                        <p>coupon code</p>
+                        <div class=" rounded-full bg-white">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-3xl lg:h-[220px] lg:w-[573px] bg-[#F78C9C] flex lg:mt-12 mt-2">
+                    <div
+                        class=" lg:h-[230px] lg:w-[350px]  border-r-4 border-white border-dotted text-left p-8  flex flex-col justify-center items-start">
+                        <h2 class=" text-4xl font-bold">20% OFF</h2>
+                        <p class="text-2xl font-medium">on your next purchase</p>
+                        <p class=" text-2xl font-medium">Use by january 2024.</p>
+                    </div>
+                    <div class=" flex flex-col justify-center items-start gap-y-2 p-8">
+                        <h2 class="text-4xl font-bold ">NEW<span class="font-raleway">20</span></h2>
+                        <p>coupon code</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center items-center mt-[62px]">
+                <button class="btn btn-outline   text-green-500 border-green-500">Secondary</button>
+            </div>
+        </section>
+    </header>
+    <main id="main-section"
+        class="max-w-full  bg-gray-100 rounded-t-[100px] border-2 border-solid border-t-green-500 lg:mt-10">
+
+        <section id="bus-info" class="lg:w-[1170px] m-auto lg:pt-20  bg-gray-100">
+            <div class="">
+                <h1 class="text-2xl text-center lg:text-6xl font-bold text-black  lg:mt-10">Green Line Paribahan</h1>
+                <p class="text-xl text-center m-auto lg:w-[755px] mt-5">Green Line Paribahan offers bus service with an
+                    online
+                    reservation available.
+                    Before booking your ticket,
+                    read other travellers’ reviews to choose the best option.</p>
+
+                <div class="lg:flex  bg-white lg:mt-12 lg:pt-11 rounded-2xl">
+                    <div class="lg:w-10/12 p-5 border-r-4 border-dotted border-green-400">
+                        <div class="flex justify-between">
+                            <div class="flex ">
+                                <div><img src="images/bus-logo.png" alt=""></div>
+                                <div>
+                                    <h2 class="lg:text-2xl font-bold text-black">Green Line Paribahan</h2>
+                                    <p class="lg:text-xl text-gray-500">Coach-009-WEB ! AC _business</p>
+                                </div>
+                            </div>
+                            <div><button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg text-xl"><img
+                                        src="images/seat-green-filled.png" alt=""><span id="Total-seat"> 40 </span>seats
+                                    left</button>
+                            </div>
+                        </div>
+                        <div class=" lg:w-full lg:h-[140px]  bg-gray-100 mt-4 p-4 rounded-md">
+                            <div class="flex justify-between pt-2 ">
+                                <h3>Route</h3>
+                                <h3>Dhaka-sylet</h3>
+                            </div>
+                            <hr class=" mt-2 ">
+                            <div class="flex justify-between">
+                                <h3>Depurture time</h3>
+                                <h3>9:00pm</h3>
+                            </div>
+                            <hr class=" mt-2">
+                            <div class="lg:flex justify-between max-sm:flex-col gap-x-6">
+
+                                <button class="btn btn-outline bg-gray-200 border-0 text-black">Boarding-point
+                                    luxmipure</button>
+                                <button class="btn btn-outline bg-gray-200 border-0 text-black">droping-point
+                                    Bogura</button>
+                                <button class="btn btn-outline bg-gray-200 border-0 text-black">Est.
+                                    time-11Hsoure</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex  justify-center items-center lg:w-2/12 bg-white">
+                        <div class=" ">
+                            <span><img class="" src="images/fare.png" alt=""></span>
+                            <h2 class="lg:text-2xl font-bold text-black">550 Taka</h2>
+                            <p class="lg:text-xl text-gray-500">Per seat</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section id="ticketing-section"
+            class="lg:w-[1170px] m-auto lg:flex justify-between lg:gap-12 bg-gray-50  lg:mt-14">
+            <div class="w-full lg:p-12 p-6">
+                <div class="text-left">
+                    <h3 class="text-2xl font-bold lg:pb-6">Select your seat</h3>
+                </div>
+                <hr>
+                <div class="flex justify-between items-center lg:pt-5 lg:pb-5">
+                    <div class="flex">
+                        <img src="images/seat-gray.png" alt="">
+                        <p class="text-xl font-medium">Available</p>
+
+                    </div>
+                    <div class="flex">
+                        <img src="images/seat-green-filled.png" alt="">
+                        <p class="text-xl font-medium text-green-500">Selected</p>
+
+                    </div>
+                </div>
+                <hr>
+                <div class="flex justify-end py-6">
+                    <kbd class="kbd "> <img src="Vector (1).png" alt=""></kbd>
+                </div>
+                <div class="w-full space-y-4">
+                    <div class="flex justify-between gap-2 w-full">
+                        <span>A</span>
+                        <kbd class="kbd ticket">A1</kbd>
+                        <kbd class="kbd ticket">A2</kbd>
+                        <kbd class="kbd ticket">A3</kbd>
+                        <kbd class="kbd ticket">A4</kbd>
+
+
+                    </div>
+                    <div class="flex justify-between gap-2 w-full">
+                        <span>B</span>
+                        <kbd class="kbd ticket">B1</kbd>
+                        <kbd class="kbd ticket">B2</kbd>
+                        <kbd class="kbd ticket">B3</kbd>
+                        <kbd class="kbd ticket">B4</kbd>
+
+                    </div>
+                    <div class="flex justify-between gap-2 w-full">
+                        <span>C</span>
+                        <kbd class="kbd ticket">C1</kbd>
+                        <kbd class="kbd ticket">C2</kbd>
+                        <kbd class="kbd ticket">C3</kbd>
+                        <kbd class="kbd ticket">C4</kbd>
+
+                    </div>
+                    <div class="flex justify-between gap-2 w-full">
+                        <span>D</span>
+                        <kbd class="kbd ticket">D1</kbd>
+                        <kbd class="kbd ticket">D2</kbd>
+                        <kbd class="kbd ticket">D3</kbd>
+                        <kbd class="kbd ticket">D4</kbd>
+
+                    </div>
+                    <div class="flex justify-between gap-2 w-full">
+                        <span>E</span>
+                        <kbd class="kbd ticket">E1</kbd>
+                        <kbd class="kbd ticket">E2</kbd>
+                        <kbd class="kbd ticket">E3</kbd>
+                        <kbd class="kbd ticket">E4</kbd>
+                    </div>
+                    <div class="flex justify-between gap-2 w-full">
+                        <span>E</span>
+                        <kbd class="kbd ticket">F1</kbd>
+                        <kbd class="kbd ticket">F2</kbd>
+                        <kbd class="kbd ticket">F3</kbd>
+                        <kbd class="kbd ticket">F4</kbd>
+                    </div>
+
+                    <div class="flex justify-between gap-2 w-full">
+                        <span>G</span>
+                        <kbd class="kbd ticket">G1</kbd>
+                        <kbd class="kbd ticket">G2</kbd>
+                        <kbd class="kbd ticket">G3</kbd>
+                        <kbd class="kbd ticket">G4</kbd>
+                    </div>
+                    <div class="flex justify-between gap-2 w-full">
+                        <span>H</span>
+                        <kbd class="kbd ticket">H1</kbd>
+                        <kbd class="kbd ticket">H2</kbd>
+                        <kbd class="kbd ticket">H3</kbd>
+                        <kbd class="kbd ticket">H4</kbd>
+                    </div>
+                    <div class="flex justify-between gap-2 w-full">
+                        <span>I</span>
+                        <kbd class="kbd ticket">I1</kbd>
+                        <kbd class="kbd ticket">I2</kbd>
+                        <kbd class="kbd ticket">I3</kbd>
+                        <kbd class="kbd ticket">I4</kbd>
+
+                    </div>
+                    <div class="flex justify-between gap-2 w-full">
+                        <span>J</span>
+                        <kbd class="kbd ticket">J1</kbd>
+                        <kbd class="kbd ticket">J2</kbd>
+                        <kbd class="kbd ticket">J3</kbd>
+                        <kbd class="kbd ticket">J4</kbd>
+
+                    </div>
+                </div>
+            </div>
+            <div class="bg-gray-50 w-full p-12">
+                <h3 class="text-2xl font-bold pb-6">Select your seat</h3>
+                <hr>
+                <div class="overflow-x-auto ">
+
+                    <table class="table">
+
+                        <thead>
+                            <tr>
+                                <th class="text-xl font-bold text-black">Seat <span id="number"
+                                        class="bg-green-500">0</span></th>
+                                <th class="text-xl font-bold text-black">Class</th>
+                                <th class="text-xl font-bold text-black">Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td id="place"></td>
+                                <td id="place1"></td>
+                                <td id="place2"></td>
+                            </tr>
+                            <tr>
+                                <td>A1</td>
+                                <td>Economy</td>
+                                <td>550</td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+                <hr>
+                <div class="flex justify-between lg:w-11/12 px-4 pb-5">
+
+                    <div>
+                        <h3> Total Price</h3>
+                    </div>
+                    <div>
+                        <h3>BDT <span id="all-price">0</span></h3>
+                    </div>
+                </div>
+                <div>
+                    <div class="join w-11/12 px-2">
+                        <input id="input-field" class=" input w-full join-item " />
+                        <button id="grand-total" class="btn join-item bg-green-500">Apply</button>
+                    </div>
+                </div>
+                <div class="flex  justify-between lg:w-11/12 px-4 pt-5">
+                    <div>
+                        <h3> Grand Total</h3>
+                    </div>
+                    <div>
+                        <h3>BDT <span id="total">0</span></h3>
+                    </div>
+                </div>
+                <div class="">
+
+                    <form class="">
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text">Passenger Name</span>
+                            </label>
+                            <input type="name" placeholder="name" class="input input-bordered" required />
+                        </div>
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text">Phone Number</span>
+                            </label>
+                            <input type="number" placeholder="number" class="input input-bordered" required />
+                        </div>
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text">Email Id</span>
+                            </label>
+                            <input type="email" placeholder="email" class="input input-bordered" required />
+                            <label class="label">
+                                <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                            </label>
+                        </div>
+                        <div class="mt-6">
+                        </div>
+                    </form>
+                    <button onclick="nextbtn()" class="btn   bg-green-500 text-white lg:w-[480px]">Next</button>
+                </div>
+            </div>
+            </div>
+
+            </div>
+        </section>
+    </main>
+    <section id="hidden-all" class="hidden lg:w-[1170px]  lg:h-[700px]   flex  justify-center items-center m-auto">
+        <div
+            class="lg:w-[700px] w-96 lg:h[471px] flex flex-col justify-center items-center space-y-3 border-2 border-solid border-green-500 pb-10 m-auto ">
+            <div><img class="text-green-500" src="images/success.png" alt=""></div>
+            <h3 class="text-2xl font-bold text-black text-green-400">Success</h3>
+            <p class="lg:w-[420px] text-center text-xl">Thank you for booking our seats.we are working hard to find the
+                best service and deals
+                for
+                you</p>
+            <p class="text-center text-xl">Shortly you will find conformation in your email</p>
+            <button class="btn text-white bg-green-500">Continue</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
